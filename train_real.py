@@ -1,7 +1,7 @@
 """
 The file has a fake data generator
 
-Create N fake images in Trident's h5 format (coords, feat) and has one MIL signal.
+Create N fake images in Trident's h5 format (coords, feat) and have one MIL signal.
 In the tumor image, 2% to 8% of the patches were added with a fixed-direction tumor vector.
 
 The labels are only at the patch level.
@@ -11,14 +11,14 @@ Param:
     - epochs: int; number of epochs
     - max_patches: int; number of patches to use; None = all of patches
     - lr: float; Adam learning rate; = 1e-3; I've tried 13-4 but AUC drops
-    - seed: int; random seed. The same seed must obtain the same way of splitting the training data. Therefore, __main__ can finally reconstruct the train/test exactly the same as during training with split_index(build_index(dir), seed=0). Feed it to mean_pool_baseline for control.
+    - seed: int; random seed. The same seed must produce the same split of the training data. Therefore, __main__ can finally reconstruct the train/test exactly the same as during training with split_index(build_index(dir), seed=0). Feed it to mean_pool_baseline for control.
 Input:
     - feat_dir: str; h5 file path
     - in each h5 file, there are features (n_pathces, dim) and witness (n_pathces, ) bool and coords (n_pathces, 2)
 
 
 1. Each n_patches file is different (150-500), and the dim must be consistent. dim is read from the bag of train[0] as load_bag(train[0][0]).shape[1]
-2. witness will not participate in training. It is the answer to "Which patch is the tumor", and is only used for after testing. The only supervisory signal for training is the slide level label in the file name
+2. The witness will not participate in training. It is the answer to "Which patch is the tumor?", and is only used after testing. The only supervisory signal for training is the slide level label in the file name
 """
 
 import copy
