@@ -1,0 +1,26 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/E_conch",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".jpeg",
+        ".png",
+        ".jpg",
+        ".svs",
+        ".mrxs",
+        ".tiff",
+        ".vms",
+        ".tif",
+        ".scn",
+        ".dcm",
+        ".vmu",
+        ".ndpi",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "seg_mag": 1.25,
+    "holes_are_tissue": true,
+    "batch_size": 64,
+    "device": "cpu"
+}

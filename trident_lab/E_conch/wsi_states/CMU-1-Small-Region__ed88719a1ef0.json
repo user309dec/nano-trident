@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "dimensions": [
+      2220,
+      2967
+    ],
+    "level_count": 1,
+    "mag": 20,
+    "mpp": 0.499
+  },
+  "resume": {
+    "last_status": "completed",
+    "last_task": "patch_features:conch_v15",
+    "last_updated_at": "2026-07-21T17:33:26-0500"
+  },
+  "schema_version": 2,
+  "slide": {
+    "abs_path": "/Users/linusliu/trident_lab/wsis/CMU-1-Small-Region.svs",
+    "ext": ".svs",
+    "id": "CMU-1-Small-Region.svs__ed88719a1ef0",
+    "name": "CMU-1-Small-Region",
+    "reader_type": "OpenSlideWSI",
+    "rel_path": null
+  },
+  "summary": {
+    "coords": "completed",
+    "patch_features": {
+      "conch_v15": "completed"
+    },
+    "segmentation": "completed"
+  },
+  "tasks": {
+    "coords": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "03a3a39d1ce7",
+          "duration_s": 0.23589611053466797,
+          "error": null,
+          "finished_at": "2026-07-21T17:27:01-0500",
+          "finished_epoch": 1784672821.402357,
+          "result": "completed",
+          "started_at": "2026-07-21T17:27:01-0500",
+          "started_epoch": 1784672821.166461
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "coords_h5": {
+          "bytes": 10808,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/E_conch/20x_512px_0px_overlap/patches/CMU-1-Small-Region_patches.h5"
+        },
+        "coords_viz": {
+          "bytes": 138288,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/E_conch/20x_512px_0px_overlap/visualization/CMU-1-Small-Region.jpg"
+        }
+      },
+      "reason": null,
+      "status": "completed"
+    },
+    "patch_features:conch_v15": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "6818fab6de12",
+          "duration_s": 260.49184465408325,
+          "error": null,
+          "finished_at": "2026-07-21T17:33:26-0500",
+          "finished_epoch": 1784673206.3186119,
+          "result": "completed",
+          "started_at": "2026-07-21T17:29:05-0500",
+          "started_epoch": 1784672945.8267672
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "coords_path": {
+          "bytes": 10808,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/E_conch/20x_512px_0px_overlap/patches/CMU-1-Small-Region_patches.h5"
+        },
+        "features_path": {
+          "bytes": 40712,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/E_conch/20x_512px_0px_overlap/features_conch_v15/CMU-1-Small-Region.h5"
+        }
+      },
+      "reason": null,
+      "status": "completed"
+    },
+    "segmentation": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "e1a2ee6ab0a3",
+          "duration_s": 1.4353151321411133,
+          "error": null,
+          "finished_at": "2026-07-21T17:27:01-0500",
+          "finished_epoch": 1784672821.157572,
+          "result": "completed",
+          "started_at": "2026-07-21T17:26:59-0500",
+          "started_epoch": 1784672819.722257
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "contour_geojson": {
+          "bytes": 222463,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/E_conch/contours_geojson/CMU-1-Small-Region.geojson"
+        },
+        "contour_jpg": {
+          "bytes": 323771,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/E_conch/contours/CMU-1-Small-Region.jpg"
+        }
+      },
+      "reason": null,
+      "status": "completed"
+    }
+  },
+  "trident_version": "0.3.0",
+  "updated_at": "2026-07-21T17:33:26-0500"
+}

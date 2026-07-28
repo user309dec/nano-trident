@@ -1,0 +1,28 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/E_uni",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".png",
+        ".jpeg",
+        ".jpg",
+        ".vmu",
+        ".ndpi",
+        ".tif",
+        ".vms",
+        ".mrxs",
+        ".tiff",
+        ".dcm",
+        ".svs",
+        ".scn",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "target_magnification": 20.0,
+    "coords_dir": "20x_256px_0px_overlap",
+    "device": "cpu",
+    "saveas": "h5",
+    "batch_limit": 64,
+    "saveto": "20x_256px_0px_overlap/features_uni_v1"
+}

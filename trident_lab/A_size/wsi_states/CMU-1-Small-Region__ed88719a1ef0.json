@@ -1,0 +1,86 @@
+{
+  "meta": {},
+  "resume": {
+    "last_status": "completed",
+    "last_task": "coords",
+    "last_updated_at": "2026-07-21T16:50:53-0500"
+  },
+  "schema_version": 2,
+  "slide": {
+    "abs_path": "/Users/linusliu/trident_lab/wsis/CMU-1-Small-Region.svs",
+    "ext": ".svs",
+    "id": "CMU-1-Small-Region.svs__ed88719a1ef0",
+    "name": "CMU-1-Small-Region",
+    "reader_type": "OpenSlideWSI",
+    "rel_path": null
+  },
+  "summary": {
+    "coords": "completed (geojson_not_found)",
+    "segmentation": "completed"
+  },
+  "tasks": {
+    "coords": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "ed82be9cc420",
+          "duration_s": 0.21353864669799805,
+          "error": null,
+          "finished_at": "2026-07-21T16:50:53-0500",
+          "finished_epoch": 1784670653.2058198,
+          "result": "completed",
+          "started_at": "2026-07-21T16:50:52-0500",
+          "started_epoch": 1784670652.9922812
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "coords_h5": {
+          "bytes": 10808,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/A_size/20x_512px_0px_overlap/patches/CMU-1-Small-Region_patches.h5"
+        },
+        "coords_viz": {
+          "bytes": 138288,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/A_size/20x_512px_0px_overlap/visualization/CMU-1-Small-Region.jpg"
+        },
+        "tissue_geojson": null
+      },
+      "reason": "geojson_not_found",
+      "status": "completed"
+    },
+    "segmentation": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "3c047c8441f9",
+          "duration_s": 1.0545547008514404,
+          "error": null,
+          "finished_at": "2026-07-21T16:50:49-0500",
+          "finished_epoch": 1784670649.7819898,
+          "result": "completed",
+          "started_at": "2026-07-21T16:50:48-0500",
+          "started_epoch": 1784670648.727435
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "contour_geojson": {
+          "bytes": 222463,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/A_size/contours_geojson/CMU-1-Small-Region.geojson"
+        },
+        "contour_jpg": {
+          "bytes": 323771,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/A_size/contours/CMU-1-Small-Region.jpg"
+        }
+      },
+      "reason": null,
+      "status": "completed"
+    }
+  },
+  "trident_version": "0.3.0",
+  "updated_at": "2026-07-21T16:50:53-0500"
+}

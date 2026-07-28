@@ -1,0 +1,32 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/B_mag10",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".png",
+        ".jpeg",
+        ".jpg",
+        ".tif",
+        ".vms",
+        ".mrxs",
+        ".ndpi",
+        ".vmu",
+        ".scn",
+        ".svs",
+        ".tiff",
+        ".dcm",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "target_magnification": 10.0,
+    "patch_size": 256,
+    "overlap": 0,
+    "saveto": "10x_256px_0px_overlap",
+    "visualize": true,
+    "min_tissue_proportion": 0.0,
+    "dump_patches": false,
+    "dump_patches_max": 0,
+    "dump_patches_format": "png",
+    "dump_patches_jpeg_quality": 90
+}

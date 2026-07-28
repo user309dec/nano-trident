@@ -1,0 +1,26 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/E_uni",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".png",
+        ".jpeg",
+        ".jpg",
+        ".vmu",
+        ".ndpi",
+        ".tif",
+        ".vms",
+        ".mrxs",
+        ".tiff",
+        ".dcm",
+        ".svs",
+        ".scn",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "seg_mag": 1.25,
+    "holes_are_tissue": true,
+    "batch_size": 64,
+    "device": "cpu"
+}

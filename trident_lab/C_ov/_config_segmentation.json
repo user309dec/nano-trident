@@ -1,0 +1,26 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/C_ov",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".png",
+        ".jpeg",
+        ".jpg",
+        ".mrxs",
+        ".ndpi",
+        ".vms",
+        ".scn",
+        ".tif",
+        ".vmu",
+        ".dcm",
+        ".tiff",
+        ".svs",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "seg_mag": 1.25,
+    "holes_are_tissue": true,
+    "batch_size": 64,
+    "device": "cpu"
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {},
+  "resume": {
+    "last_status": "running",
+    "last_task": "segmentation",
+    "last_updated_at": "2026-07-21T17:11:23-0500"
+  },
+  "schema_version": 2,
+  "slide": {
+    "abs_path": "/Users/linusliu/trident_lab/wsis/CMU-1-Small-Region.svs",
+    "ext": ".svs",
+    "id": "CMU-1-Small-Region.svs__ed88719a1ef0",
+    "name": "CMU-1-Small-Region",
+    "reader_type": "OpenSlideWSI",
+    "rel_path": null
+  },
+  "summary": {
+    "segmentation": "running"
+  },
+  "tasks": {
+    "segmentation": {
+      "_active_attempt_id": "fa6a66be6ee3",
+      "attempts": [
+        {
+          "attempt_id": "fa6a66be6ee3",
+          "duration_s": null,
+          "error": null,
+          "finished_at": null,
+          "finished_epoch": null,
+          "result": "running",
+          "started_at": "2026-07-21T17:11:23-0500",
+          "started_epoch": 1784671883.826716
+        }
+      ],
+      "message": "started",
+      "outputs": {
+        "contour_jpg": {
+          "bytes": null,
+          "exists": false,
+          "path": "/Users/linusliu/trident_lab/D_hest/contours/CMU-1-Small-Region.jpg"
+        }
+      },
+      "reason": null,
+      "status": "running"
+    }
+  },
+  "trident_version": "0.3.0",
+  "updated_at": "2026-07-21T17:11:23-0500"
+}

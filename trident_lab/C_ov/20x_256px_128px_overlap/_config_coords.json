@@ -1,0 +1,32 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/C_ov",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".scn",
+        ".mrxs",
+        ".vmu",
+        ".tif",
+        ".vms",
+        ".svs",
+        ".tiff",
+        ".dcm",
+        ".ndpi",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "target_magnification": 20.0,
+    "patch_size": 256,
+    "overlap": 128,
+    "saveto": "20x_256px_128px_overlap",
+    "visualize": true,
+    "min_tissue_proportion": 0.0,
+    "dump_patches": false,
+    "dump_patches_max": 0,
+    "dump_patches_format": "png",
+    "dump_patches_jpeg_quality": 90
+}

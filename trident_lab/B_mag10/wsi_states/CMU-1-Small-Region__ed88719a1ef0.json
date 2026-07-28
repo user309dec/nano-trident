@@ -1,0 +1,85 @@
+{
+  "meta": {},
+  "resume": {
+    "last_status": "completed",
+    "last_task": "coords",
+    "last_updated_at": "2026-07-21T16:53:29-0500"
+  },
+  "schema_version": 2,
+  "slide": {
+    "abs_path": "/Users/linusliu/trident_lab/wsis/CMU-1-Small-Region.svs",
+    "ext": ".svs",
+    "id": "CMU-1-Small-Region.svs__ed88719a1ef0",
+    "name": "CMU-1-Small-Region",
+    "reader_type": "OpenSlideWSI",
+    "rel_path": null
+  },
+  "summary": {
+    "coords": "completed",
+    "segmentation": "completed"
+  },
+  "tasks": {
+    "coords": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "b3e9f6c3ab88",
+          "duration_s": 0.22067022323608398,
+          "error": null,
+          "finished_at": "2026-07-21T16:53:29-0500",
+          "finished_epoch": 1784670809.702532,
+          "result": "completed",
+          "started_at": "2026-07-21T16:53:29-0500",
+          "started_epoch": 1784670809.4818618
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "coords_h5": {
+          "bytes": 10840,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/B_mag10/10x_256px_0px_overlap/patches/CMU-1-Small-Region_patches.h5"
+        },
+        "coords_viz": {
+          "bytes": 141017,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/B_mag10/10x_256px_0px_overlap/visualization/CMU-1-Small-Region.jpg"
+        }
+      },
+      "reason": null,
+      "status": "completed"
+    },
+    "segmentation": {
+      "_active_attempt_id": null,
+      "attempts": [
+        {
+          "attempt_id": "96cc32cae39c",
+          "duration_s": 1.1040151119232178,
+          "error": null,
+          "finished_at": "2026-07-21T16:53:25-0500",
+          "finished_epoch": 1784670805.881206,
+          "result": "completed",
+          "started_at": "2026-07-21T16:53:24-0500",
+          "started_epoch": 1784670804.777191
+        }
+      ],
+      "message": null,
+      "outputs": {
+        "contour_geojson": {
+          "bytes": 222463,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/B_mag10/contours_geojson/CMU-1-Small-Region.geojson"
+        },
+        "contour_jpg": {
+          "bytes": 323771,
+          "exists": true,
+          "path": "/Users/linusliu/trident_lab/B_mag10/contours/CMU-1-Small-Region.jpg"
+        }
+      },
+      "reason": null,
+      "status": "completed"
+    }
+  },
+  "trident_version": "0.3.0",
+  "updated_at": "2026-07-21T16:53:29-0500"
+}

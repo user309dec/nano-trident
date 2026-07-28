@@ -1,0 +1,26 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/B_mag10",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".jpeg",
+        ".png",
+        ".jpg",
+        ".svs",
+        ".mrxs",
+        ".scn",
+        ".ndpi",
+        ".vms",
+        ".tif",
+        ".vmu",
+        ".tiff",
+        ".dcm",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "seg_mag": 1.25,
+    "holes_are_tissue": true,
+    "batch_size": 64,
+    "device": "cpu"
+}

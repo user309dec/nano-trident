@@ -1,0 +1,27 @@
+{
+    "job_dir": "/Users/linusliu/trident_lab/base",
+    "wsi_source": "/Users/linusliu/trident_lab/wsis",
+    "wsi_ext": [
+        ".jpeg",
+        ".png",
+        ".jpg",
+        ".svs",
+        ".tiff",
+        ".scn",
+        ".vms",
+        ".tif",
+        ".mrxs",
+        ".dcm",
+        ".vmu",
+        ".ndpi",
+        ".sdpc",
+        ".zarr",
+        ".czi"
+    ],
+    "skip_errors": false,
+    "coords_dir": "20x_256px_0px_overlap",
+    "device": "cpu",
+    "saveas": "h5",
+    "batch_limit": 64,
+    "saveto": "20x_256px_0px_overlap/features_resnet50"
+}
