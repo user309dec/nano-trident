@@ -140,16 +140,12 @@ def load_bag(path, max_patches=None, rng=None):
 # Compute Area Under Curve
 # ======================================================================================
 def compute_auc(y_true, y_score):
-    try:
-        from sklearn.metrics import roc_auc_score
-        return float(roc_auc_score(y_true, y_score))
-    except ImportError:
-        pos = [s for s, y in zip(y_score, y_true) if y == 1]
-        neg = [s for s, y in zip(y_score, y_true) if y == 0]
-        if not pos or not neg:
-            return float("nan")
-        wins = sum((p > n) + 0.5 * (p == n) for p in pos for n in neg)
-        return wins / (len(pos) * len(neg))
+    pos = [s for s, y in zip(y_score, y_true) if y == 1]
+    neg = [s for s, y in zip(y_score, y_true) if y == 0]
+    if not pos or not neg:
+        return float("nan")
+    wins = sum((p > n) + 0.5 * (p == n) for p in pos for n in neg)
+    return wins / (len(pos) * len(neg))
 
 
 @torch.no_grad()
