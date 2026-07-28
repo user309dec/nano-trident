@@ -110,7 +110,7 @@ def nano_encode(slide, coords, patch_size, encoder, preprocess, batch_size=32):
     encoder.eval() #recursively set every self.training of encoder to False. Let resnet50 uses BatchNorm accumulated running_mean generated during training. Stop using the current batch statistic
     # If forget 'eval()', the features of a certain patch will depend on which patches it happens to be in the same batch as.
     # Changing 'batch_size' will change the result, and even running the same slide twice may not be consistent.
-    # This will affect the downstream MIL because your feature bag is no longer deterministic.
+    # This will affect the downstream MIL because feature bag is no longer deterministic.
 
     feats = []       # collect each batch's output
     buffer = []      # collect one batch then calculate
@@ -151,7 +151,7 @@ class NanoABMIL(nn.Module):
         return logits, a.squeeze(-1) # squeez (n, 1) to (n,) for returning the per-patch attention score
 
 # --------------------------------------------------------------------------------------
-# Written by Claude — the payoff: paint each patch's attention weight back onto the slide, so you
+# Written by Claude — the payoff: paint each patch's attention weight back onto the slide, so I
 # can SEE where the model is looking. (On an untrained model this is just the random
 # initial attention — see --train-demo below to make it mean something.)
 # --------------------------------------------------------------------------------------
