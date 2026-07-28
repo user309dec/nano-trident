@@ -199,7 +199,7 @@ def train_real(feat_dir, epochs=15, lr=1e-3, seed=0, max_patches=None):
         flag = ""
         if auc > best_auc:
             best_auc, best_epoch = auc, epoch
-            # ⚠️ use deepcopy:state_dict() to return reference; for the next step, opt.step() will opt it
+            # use deepcopy:state_dict() to return reference; for the next step, opt.step() will opt it
             best_state = copy.deepcopy(model.state_dict())
             flag = "  <- best"
         print(f"[C ] epoch {epoch:2d}  train loss {total / len(train):.4f}   val AUC {auc:.3f}{flag}")
@@ -229,7 +229,7 @@ def witness_check(model, items):
         _, attn = model(feats)
         a = attn.numpy()
         ratios.append(a[wit].mean() / (a[~wit].mean() + 1e-9))
-    print(f"[E ] On positive slides,witnesses' average attention equals to the rest times {np.mean(ratios):.1f}  "
+    print(f"[E ] On positive slides, witnesses' average attention equals to the rest times {np.mean(ratios):.1f}  "
           f"(>2 shows true learning)")
 
 
@@ -255,7 +255,7 @@ def mean_pool_baseline(train, test):
 # Main
 # ======================================================================================
 if __name__ == "__main__":
-    fake_dir = os.path.expanduser("~/trident_lab/bags1")
+    fake_dir = os.path.expanduser("~/trident_lab/bags1") #it's the absolute dir on my mac
     if not glob.glob(os.path.join(fake_dir, "*.h5")):
         make_fake_dataset(fake_dir, n_slides=300, dim=2048, seed=0)
 
